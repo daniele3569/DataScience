@@ -19,6 +19,7 @@ Phase 1>  Data Analysis with Python
                                                * Data Types, Data Distibution
                                                  df.types
                                                  df.describe()
+                                                 df.info()
                           ** Locate potential issues
                                                * Potential info , and type mistmatch
                                                * Compatibility with python methods
