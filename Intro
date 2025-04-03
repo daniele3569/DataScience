@@ -1,6 +1,15 @@
 This is a summary of the lessons learened
 
 Phase 1>  Data Analysis with Python
-  *
-  *
-  *
+  *** Importing Datasets
+                          Libraries
+                          ** Scientific Computing
+                                               * Pandas
+                                               * Numpy
+                                               * Scypy
+                          ** Visualization Libraries
+                                               * Mathplotlib
+                                               * Seaborn
+                          ** Algorithm Libraries
+                                               * Scikit-learn
+                                               * Statsmodels
