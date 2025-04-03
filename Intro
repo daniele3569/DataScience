@@ -24,4 +24,18 @@ Phase 1>  Data Analysis with Python
                                                * Potential info , and type mistmatch
                                                * Compatibility with python methods
                                                   /*****************************/
+                          Accessing Databases using Python
+                          ** SQL API
+                                               * Library function calls to DBMS
+                                                 CONNECT(db, user, pswd)
+                                                 SEND("update emploteed set..")
+                                                 EXECUTE()
+                                                 STATUS_CHECK()
+                          ** DB API Calls
+                                               * standard for multiple DBMS
+                                                 Connection Obeects
+                                                 Cursor Objects
+                                                  /*****************************/
+                                                *Connection methods
+                                                 cursor(), commit(), rollback(), close()
                                          
