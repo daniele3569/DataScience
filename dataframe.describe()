@@ -37,3 +37,9 @@ Insights into data spread and variability (standard deviation, min, max, quartil
 A good overview of the distribution of your data.
 
 If your data is numeric, describe() is a powerful tool to get a quick sense of its characteristics! Let me know if you have more questions or need further details!
+
+
+However, what if you would also like to check all the columns including those that are of type object?
+
+
+You can add an argument include = "all" inside the bracket. Try it again.
