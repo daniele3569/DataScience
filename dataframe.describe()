@@ -1,0 +1,39 @@
+Example output for df.describe():
+Let’s say you have a dataset of ages, and df.describe() outputs the following:
+
+text
+Copy
+count    1000.000000
+mean       35.478900
+std        12.345678
+min        18.000000
+25%        25.000000
+50%        35.000000
+75%        45.000000
+max        60.000000
+Count: 1000 non-null values.
+
+Mean: The average age is about 35.48 years.
+
+Std: The ages deviate from the mean by roughly 12.35 years.
+
+Min: The youngest age in the dataset is 18.
+
+25% (Q1): 25% of the ages are below 25.
+
+50% (Median): The median age is 35.
+
+75% (Q3): 75% of the ages are below 45.
+
+Max: The oldest age in the dataset is 60.
+
+In summary:
+The statistics retrieved by df.describe() give you:
+
+An understanding of central tendency (mean, median).
+
+Insights into data spread and variability (standard deviation, min, max, quartiles).
+
+A good overview of the distribution of your data.
+
+If your data is numeric, describe() is a powerful tool to get a quick sense of its characteristics! Let me know if you have more questions or need further details!
