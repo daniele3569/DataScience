@@ -5,9 +5,23 @@ How to deal with missing data?
  *Drop the variable  
  *Drop the data entry 
 
+  CODE
+ (dataframes.dropna())
+ Drop the variable   (axis= 1 drops the entire column)
+ Drop the data entry (axis= 0 drops the entire row)
+
+  E.g df.dropna(subset["price"], axis=0 , inplace= True)
+  note: In place equals true allows the modification to be done in the dataset directly, if not it does not edit the dataframe
+
 > Replace the missing values
  *replace it with an average(of similar datapoint) - numerical variables
  *replace it by frequency - categorical variables
  *replace it based on other functions
+
+  CODE
+  dataframe.replace(missing_value, new_value):
+  E.g.  replace with the mean
+  mean = df["normalized-losses"].mean()
+  df["normalized-losses"].replace(np.nan, mean)
 
 > Leave it as missing data
