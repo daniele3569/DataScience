@@ -1,0 +1,11 @@
+How to deal with missing data?
+
+> Check with the data collection source, and see if those values can be filled in
+> Drop the missing vlues
+ *Drop the variable
+ *Drop the data entry
+> Replace the missing values
+ *replace it with an average(of similar datapoint) - numerical variables
+ *replace it by frequency - categorical variables
+ *replace it based on other functions
+> Leave it as missing data
