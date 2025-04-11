@@ -1,0 +1,23 @@
+Sometimes data is stored in different formats and you may need to make it uniform.
+
+>Unit Conversion
+E.G Applying calculations to an entire column
+Convert "mpg" to "L/100km" in Car dataset
+
+df["city-mpg"]= 235/df["city-mpg"]
+df.rename(columns= {"city_mpg": "city-L/100 km"}, inplace = True)
+
+>Convert data types
+df["price"].tail(5)
+
+200  16845
+201  19045
+202  21485
+203  22470
+204  22625
+Name:price, dtype:object
+
+dataframe.dtypes() to identift data type
+dataframe.astype() to convert data type
+
+df["price"] = df["price"].astype("int")
