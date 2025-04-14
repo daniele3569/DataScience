@@ -1,1 +1,46 @@
+Data Normalizaiton
+
+Uniform the feutures value with different range
+E.g
+Not-normalized
+Age Income
+20    100000
+30     20000
+40    500000
+
+Not-normalized
+Agen and imcome are in different range
+Hard to compare
+Income will influence the result more
+
+Normalized
+Age Income
+0.20    0.2
+0.30    0.04
+0.40    1
+
+Both variables are normalized in ranges from 0-1
+Similar value range
+similar intirnsic influence on analytical model
+
+
+Methods of noemalizing
+1)  Simple Feature scaling
+Xnew= Xold / Xmax
+
+WITH Pandas
+df["length"] = df["length"] / df["length"].max()
+
+2)  Min-Max
+Xnew= Xold - Xmin / Xmax - Xmin
+WITH Pandas
+df["length"] = (df["length"] - df["length"].min() )/ (df["length"].max() - df["length"].min() )
+
+3) Z-score
+Xnew = Xold - U / O
+Where U: Miu is the average of the feature
+and O : Zigma is the standard deviation
+
+WITH Pandas
+df["length"] = (df["length"] - df["length"].mean() )/  df["length"].std() 
 
