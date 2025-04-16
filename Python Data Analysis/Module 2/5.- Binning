@@ -1,0 +1,13 @@
+Binning: Grouping of values into bins
+Converts numeric into categorical variables 
+
+e.g price : 5000,10000, 12000, 12000, 30000,31000,39000, 44000, 44500.
+bins: low, Mid, High
+
+Price   Price-binned
+13495   Low
+16500   Low
+18920   Medium
+41315   High
+5151    Low
+6295    Low
