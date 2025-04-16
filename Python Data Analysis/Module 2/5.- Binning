@@ -11,3 +11,10 @@ Price   Price-binned
 41315   High
 5151    Low
 6295    Low
+
+Binning in Python Pandas
+linspace to get 4 numbers equally spaced along the given range min-max
+bins = np.linspace(min(df["price"]),max(df["price"]),4 )
+group_names = ["Low","Medium","High"] 
+cut to segment and sort data avlues into bins
+df["price-binned"] = pd.cut(df["price"], bins, labels = group_names , inlude_lowest = True)
