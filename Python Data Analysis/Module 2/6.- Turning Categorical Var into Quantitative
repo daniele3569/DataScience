@@ -1,0 +1,25 @@
+Most statistical models cannot take in the objects/strings as inputs
+
+e.g.
+CAR   FUEL
+A      gas
+B      diesel
+C      gas
+D      gas
+
+Solution:
+Add dummy variables for each unique category
+Assing 0 or 1 in each category
+THIS TECHNIQUE IS CALLED "ONE-HOT ENCODING"
+
+CAR   FUEL      gas    diesel
+A      gas       1      0
+B      diesel    0      1
+C      gas       1      0
+D      gas       1      0
+
+Dummy variables in Pythib ppandas
+Use pandas.get_dumies() method
+Convert categorical variables to dummy variables (0 or 1)
+
+pd.get_dummies(df['fuel'])
