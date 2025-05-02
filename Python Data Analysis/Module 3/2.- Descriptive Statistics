@@ -1,0 +1,35 @@
+Module 2 - Descriptive Statistics
+
+* Explore Data before building complicated models
+* Calculate descriptive statistics for your data
+* Describe basic feautures of data 
+* Giving short summaries about the sample and measures of the data
+
+DESCRIBE(): describe()
+Summarize statistics using pandas describe method
+df.describe()
+
+VALUE_COUNTS()
+Summarize the categorical data by using the value_counts() method
+
+drive_wheels_counts= df["drive-wheels"].value_counts()
+
+drive_wheels_counts.rename(columns= {'drive-wheels': 'value_counts'}, inplace= True)
+drive_wheels_counts.index.name = 'drive-wheels'
+
+BOX PLOTS
+sns.boxplot(x= "drive-wheels", y= "price", data= df)
+
+SCATTER PLOT
+Show relationship between two variables:
+1. Prodictor/Independent variables on x-axis
+2. Target/dependent variable on y-axis
+
+e.g.
+y=df["price"]
+y=df["engine-size"]
+plt.scatter(x,y)
+
+plt.title("Scatterplot of Engine Size Vs Price")
+plt.xlabel("Engine Size")
+plt.ylabel("Price")
