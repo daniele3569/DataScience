@@ -1,0 +1,17 @@
+Module 2 - Exploratory Data Analysis
+
+> Preliminary step in data analysis to:
+
+*Summarize main characteristics of the data
+*Gain better understanding of the data set
+*Uncover relationships between variables
+*Extract important variables
+
+E.g Question: What are the characteristics that have the most impact on the car price?
+
+> Learning Objectives
+* Descriptive Statistics
+*GroupBY
+*ANOVA (Analysis of Variance - Satatistical method)
+*Correlation
+*Correlation - Statistics (Advanced correlation - Pearson Correlation- Correlation Heat Maps)
