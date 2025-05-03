@@ -1,0 +1,44 @@
+Useful to group data to answer questions.
+
+e.g Is there any relationship between the different types of "drive system" and the "price" of the vehicles?
+
+GROUPBY
+Use Panda dataframe.groupby() method:
+  - Can be applied to categorical variables
+  - Group data into categories
+  -Single or multiple variables
+  
+df_test = df[['drive-wheels', 'body-style', 'price']]
+df_grp = df_test.groupby(['drive-wheels', 'body-style'], as_index=False).mean()
+df_grp
+| drive-wheels | body-style  | price        |
+| ------------ | ----------- | ------------ |
+| 4wd          | hatchback   | 7603.000000  |
+| 4wd          | sedan       | 12647.333333 |
+| 4wd          | wagon       | 9095.750000  |
+| fwd          | convertible | 11595.000000 |
+| fwd          | hardtop     | 8249.000000  |
+| fwd          | hatchback   | 8396.387755  |
+| fwd          | sedan       | 9811.800000  |
+| fwd          | wagon       | 9997.333333  |
+| rwd          | convertible | 23949.600000 |
+| rwd          | hardtop     | 24202.714286 |
+| rwd          | hatchback   | 14337        |
+
+
+PIVOT
+One variable is displayed along the columns, and the other variable is displayed along the rows
+
+df_pivot = df_grp.pivot(index='drive-wheels', columns='body-style')
+| drive-wheels | convertible  | hardtop      | hatchback    | sedan        | wagon        |
+| ------------ | ------------ | ------------ | ------------ | ------------ | ------------ |
+| **4wd**      | 0.0          | 0.000000     | 7603.000000  | 12647.333333 | 9095.750000  |
+| **fwd**      | 11595.000000 | 8429.000000  | 8396.387755  | 9811.800000  | 9997.333333  |
+| **rwd**      | 23949.600000 | 24202.714286 | 14337.777778 | 21711.833333 | 16994.222222 |
+
+HEATMAP
+Plot target variable against multiple variables
+plt.pcolor(df_pivot, cmap= 'RdBu')
+plt.colorbar()
+plt.show()
+
