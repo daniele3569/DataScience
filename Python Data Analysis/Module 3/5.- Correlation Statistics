@@ -1,0 +1,20 @@
+##PEARSON CORRELATION##
+
+*Measure the strength of the correlation between two features
+    *Correlation coefficeint
+    *P-value
+
+*Correlation coefficient
+    *Close to +1: Large Positive relationship
+    *Close to -1: Large Negative relationship
+    *Close to 0: No relationship
+
+*P-Value
+    *P-value <0.001 Strong certainty in the result
+    *P-value <0.05 Moderate certainty in the result
+    *P-value <0.1 Weak certainty in the result
+    *P-value >0.1 No certainty in the result
+
+*Strong correlation
+    *Correlation coefficient close to 1 or -1
+    * P value less than 0.001
