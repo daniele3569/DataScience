@@ -1,0 +1,8 @@
+## CORRELLATION
+What is correlation? Measures to what extent different variables are interdependent.
+*correltion does not imply causation
+
+E.G
+Correlation betwen two features (highway-mpg and price)
+sns.regplot(x="highway-mpg", y="price", data=df)
+plt.ylim(0,)
